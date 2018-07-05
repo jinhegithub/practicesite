@@ -1,0 +1,59 @@
+/* Define stylesheet all pages*/
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {
+  font-family: 'Nanum Gothic';
+}
+a{
+  color: #000000;
+  text-decoration: none;
+}
+a:hover{
+  color: #bbbbbb;
+  text-decoration: none;
+  cursor:pointer;
+}
+/* navigation */
+.navbar-default{
+  background-color: black;
+  border-color: black;
+}
+.navbar-default .navbar-brand{ /*navigation title color*/
+  color:white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus{ /*navigation title hover color*/
+  background-color: transparent;
+  color: #bbbbbb;
+}
+.navbar-default .navbar-nav >.active>a,
+.navbar-default .navbar-nav >.active>a:hover,
+.navbar-default .navbar-nav >.active>a:focus{/* current active navigation color*/
+  color:white;
+  background-color: #000000;
+}
+.navbar-default .navbar-nav > li >a:hover,
+.navbar-default .navbar-nav > li> a:focus {/* navigation manu color  */
+  color:#bbbbbb;
+}
+.navbar-default .navbar-nav >.open>a,
+.navbar-default .navbar-nav >.open>a:hover,
+.navbar-default .navbar-nav >.open>a:focus{/* opened dropdown menu color*/
+  color:#000000;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+.navbar-default .navbar-nav> li >a{/*navigation default color */
+  color:white;
+}
+
+
+
+@media (max-width:767px){
+  .navbar-default .navbar-nav .open .dropdown-menu > li >a {
+    color:#ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li >a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li >a:focus{
+    color:#bbbbbb;
+  }
+}
